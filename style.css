@@ -32,7 +32,7 @@ body {
   border-radius: 10px;
 }
 
-.Social-Links-Card-Header img {
+.Social-Links-Card_Header img {
   height: 60px;
   border-radius: 100%;
 }
@@ -69,7 +69,7 @@ li {
   width: 250px;
   padding: 15px;
   border-radius: 10px;
-  font-size: 0.80em;
+  font-size: 0.8em;
   cursor: pointer;
   font-weight: bold;
 
@@ -81,13 +81,38 @@ li:hover {
   color: black;
 }
 
-.Social-Links-Card-Footer {
+.Social-Links-Card_Footer {
   margin-top: 20px;
   font-size: 0.8em;
   color: hsl(228, 34%, 66%);
 }
 
+@media (max-width: 320px) {
+  .Social-Links-Card {
+    width: 100%;
+  }
 
+  .Social-Links-Card-Header img {
+    height: 50px;
+  }
+
+  .Name {
+    font-size: 0.9em;
+  }
+
+  .Location {
+    font-size: 0.7em;
+  }
+
+  .Field {
+    font-size: 0.7em;
+  }
+
+  li {
+    width: 200px;
+    font-size: 0.6em;
+  }
+}
 
 @media (max-width: 375px) {
   .Social-Links-Card {
@@ -126,10 +151,10 @@ li:hover {
   .Field {
     font-size: 0.78em;
   }
-    li {
-        width: 250px;
-        font-size: 0.85em;
-    }
+  li {
+    width: 250px;
+    font-size: 0.85em;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 600px) {
@@ -149,7 +174,7 @@ li:hover {
     font-size: 0.75em;
   }
   .Field {
-    font-size: 0.80em;
+    font-size: 0.8em;
   }
   li {
     width: 250px;
@@ -171,7 +196,7 @@ li:hover {
   }
 
   .Location {
-    font-size: 0.90em;
+    font-size: 0.9em;
   }
 
   .Field {
@@ -179,7 +204,7 @@ li:hover {
   }
   li {
     width: 300px;
-    font-size: 0.90em;
+    font-size: 0.9em;
   }
 }
 
@@ -206,4 +231,16 @@ li:hover {
     width: 320px;
     font-size: 1em;
   }
+}
+
+.FM {
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  gap: 0.6em;
+  margin-top: 10px;
+}
+
+.FM a {
+  color: springgreen;
 }
